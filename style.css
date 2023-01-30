@@ -6,23 +6,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     min-height: 100vh;
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
-
-
   .Container {
     background-color: #FFFFFF;
     width: 450px;
     height: 697px;
     border-radius: 20px;
-    text-align: center;
     filter: drop-shadow(0 40 40 rgba(13, 48, 189, 0.1518))
 }
-
 
 .main-image {
     position: relative; 
@@ -38,6 +33,9 @@ img {
     padding: 48px 48px 20px 48px;
     justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
@@ -66,6 +64,9 @@ img {
     display: flex;
     padding: 0;
     margin: 20px 48px 32px 48px; 
+    text-align: center;
+    align-items: center;
+    
 }
 
 
@@ -158,9 +159,70 @@ span a:hover {
     cursor: pointer;
   }
 
-  @media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
+    /* for mobile */
     .Container {
-      width: 450px;
-      height: 697px;
+    width: 327px;
+    height: 567px;
     }
-  }
+
+    .title_discription {
+      padding: 24px 32px 24px 32px;
+    }
+
+    .title{
+      Width: 263px;
+      Height: 29px;
+      font-size: 22px;
+    }
+
+    .discription {
+      width: 263px;
+      height: 75px;
+      font-size: 15px;
+    }
+
+    .Child_Container {
+      width: 279px;
+      height: 81px;
+      margin-left:24px;
+    }
+
+    .music {
+      width: 48px;
+      height: 48px;
+      margin: 17px 20px 16px 16px;
+    }
+
+    #first {
+      font-size: 14px;
+      bottom: 3px;
+      top: 21px;
+    }
+
+    #second {
+        bottom: 19px;
+        top: 41px;
+        font-size: 14px; 
+    }
+
+    span a {
+        bottom: 31px;
+        left: 215px;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .button{
+      Width: 279px;
+      Height: 50px;
+      margin-left: 24px;
+    }
+
+    .cancel {
+      Width:96px;
+      height: 20px;
+      margin-top: 24px;
+      margin-left: 116px;
+    }
+}
